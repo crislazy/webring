@@ -1,7 +1,7 @@
 <h1 align="center">MeowRing</h1>
 <p align="center"><i>The source code for webring.crislzy.xyz</i></p>
 
-[](https://hackatime.hackclub.com/api/v1/badge/U09TNMQ9MCZ/KittyRing)
+![](https://hackatime.hackclub.com/api/v1/badge/U09TNMQ9MCZ/KittyRing)
 
 [Getting Started](#getting-started) | [License](#license) 
 
