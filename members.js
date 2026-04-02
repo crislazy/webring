@@ -11,6 +11,6 @@ fetch('/sites.json')
         };
 
         members.forEach(member => {
-            memberList.innerHTML += `<div class="member"><p><a href="${member.url}">${member.name}</a></div>`;
+            memberList.innerHTML += `<div class="member"><a href="${member.url}">${member.name}</a></div>`;
         });
     })
