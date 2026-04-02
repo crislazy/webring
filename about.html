@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PurrRing</title>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css?v=1">
+        <!--REST LATER-->
+    </head>
+    <body>
+        <a href="/">Go home</a>
+        <div class="home-info">
+            <h1>MeowRing</h1>
+        </div>
+        <h3>Joining</h3>
+        <p>To join, you need to first follow these rules:</p>
+        <ul>
+            <li>Your website does not contain any NSFW, racist or hateful content.</li>
+            <li>You must add the webring widget to your site.</li>
+        </ul>
+        <p>If you follow these rules, submit a PR to <a href="https://github.com/crislazy/webring" target="_blank">this repo</a>, adding a new json entry to the <i>sites.json</i> file(replacing "&lt;name&gt; and "&lt;url&gt; with your website's name and url):</p>
+        <code>{"name": "&lt;name&gt;","url": "&lt;url&gt;"}</code>
+        <hr>
+        <h3>Widgets</h3>
+        <p>The widget is completely customizable, containing 2-3 links.</p>
+        <p>Example widget:</p>
+        <link rel="stylesheet" type="text/css" href="/styles/example.css">
+        <div class="widget">
+            <a href="https://webring.crislzy.xyz/webring.html?name=your_name&to=prev">Prev</a>
+            <a href="https://webring.crislzy.xyz">MeowRing</a>
+            <a href="https://webring.crislzy.xyz/webring.html?name=your_name&to=next">Next</a>
+        </div>
+        <p>Copy and paste this into your site, replacing <code>your_name</code> with your site's name:</p>
+
+        <textarea readonly>
+<link rel="stylesheet" type="text/css" href="https://webring.crislzy.xyz/styles/example.css">
+<div class="widget">
+    <a href="https://webring.crislzy.xyz/webring.html?name=your_name&to=prev">Prev</a>
+    <a href="https://webring.crislzy.xyz">MeowRing</a>
+    <a href="https://webring.crislzy.xyz/webring.html?name=your_name&to=next">Next</a>
+</div>
+        </textarea>
+        <p>You can also customize it however you want :)</p>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bg: #f1dbc7;
+    --card: #fffaf6;
+    --text: #2d2d2d;
+    --link: #7aa2f7;
+}
+
+body {
+    color: var(--text);
+    background: var(--bg);
+    font-family: DM Sans;
+}
+a { 
+    display: inline-block;
+    font-family: DM Sans;
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text-rotate {
+    display:inline-block;
+    animation:spin 1.6s linear infinite
+}
+
+@keyframes spin {
+    0% {
+    transform: rotate(-60deg);
+    }
+    50% {
+    transform: rotate(60deg);
+    }
+    100% {
+    transform: rotate(-60deg);
+    }
+}

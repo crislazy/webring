@@ -16,9 +16,18 @@ function redirect() {
         url => url.name.toLowerCase() === (name || "").toLowerCase()
     );
 
+    if (currentIndex === -1) {
+        currentIndex = 0;
+    }
+
     let newIndex;
-    if (to == "next") newIndex = (currentIndex + 1) % sites.length;
-    if (to == "prev") newIndex = (currentIndex - 1 + sites.length) % sites.length;
+    if (to == "next") {
+        newIndex = (currentIndex + 1) % sites.length;
+    } else if (to == "prev") {
+        newIndex = (currentIndex - 1 + sites.length) % sites.length;
+    } else {
+        newIndex = 0;
+    }
 
     window.location.replace(sites[newIndex].url);
 }
