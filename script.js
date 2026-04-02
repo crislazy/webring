@@ -20,14 +20,11 @@ function redirect() {
         currentIndex = 0;
     }
 
-    let newIndex;
+    let newIndex = currentIndex;
     if (to == "next") {
         newIndex = (currentIndex + 1) % sites.length;
     } else if (to == "prev") {
         newIndex = (currentIndex - 1 + sites.length) % sites.length;
-    } else {
-        newIndex = 0;
     }
 
-    window.location.replace(sites[newIndex].url);
-}
+window.location.href = sites[newIndex].url;
