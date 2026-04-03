@@ -28,3 +28,4 @@ function redirect() {
     } else {newIndex=0;}
 
 window.location.replace(sites[newIndex].url);
+}
