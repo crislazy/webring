@@ -17,7 +17,7 @@ function redirect() {
     );
 
     if (currentIndex === -1) {
-        currentIndex = 0;
+        currentIndex = -1;
     }
 
     let newIndex;
